@@ -4,13 +4,15 @@ cask "xworkmate" do
 
   url "https://github.com/ai-workspace-lab/xworkmate-app/releases/download/v1.2.0-build.851/XWorkmate-#{version}.dmg"
   name "XWorkmate"
-  desc "XWorkmate desktop-first AI workspace shell"
+  desc "Desktop-first AI workspace shell"
   homepage "https://github.com/ai-workspace-lab/xworkmate-app"
 
   livecheck do
     url :url
     strategy :github_latest
   end
+
+  depends_on :macos
 
   app "XWorkmate.app"
 
